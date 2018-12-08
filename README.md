@@ -49,5 +49,7 @@ Try it and see the output.
  ![Image of Django App](https://github.com/kennedyCzar/POSTGRE-DATABASE-MANAGEMENT-USING-DJANGO-REST-API/blob/master/_IMAGES/Data_table.PNG)
  
  
+ #### Make contribution or report issue
  
+ [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/kennedyCzar/POSTGRE-DATABASE-MANAGEMENT-USING-DJANGO-REST-API/issues)
  
