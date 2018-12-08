@@ -1,8 +1,8 @@
 # POSTGRE DATABASE MANAGEMENT USING DJANGO REST API [![HitCount](http://hits.dwyl.io/kennedyCzar/https://github.com/kennedyCzar/POSTGRE-DATABASE-MANAGEMENT-USING-DJANGO-REST-API.svg)](http://hits.dwyl.io/kennedyCzar/https://github.com/kennedyCzar/POSTGRE-DATABASE-MANAGEMENT-USING-DJANGO-REST-API)
 
-How to Run the program
+How to Run the program [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 --------------------------
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
+
 [![ForTheBadge uses-html](http://ForTheBadge.com/images/badges/uses-html.svg)](http://ForTheBadge.com)
 [![ForTheBadge uses-css](http://ForTheBadge.com/images/badges/uses-css.svg)](http://ForTheBadge.com)
 [![ForTheBadge uses-js](http://ForTheBadge.com/images/badges/uses-js.svg)](http://ForTheBadge.com)
