@@ -1,3 +1,5 @@
+# POSTGRE DATABASE MANAGEMENT USING DJANGO REST API [![HitCount](http://hits.dwyl.io/kennedyCzar/https://github.com/kennedyCzar/POSTGRE-DATABASE-MANAGEMENT-USING-DJANGO-REST-API.svg)](http://hits.dwyl.io/kennedyCzar/https://github.com/kennedyCzar/POSTGRE-DATABASE-MANAGEMENT-USING-DJANGO-REST-API)
+
 How to Run the program
 --------------------------
 
@@ -36,3 +38,16 @@ Not that the project works perfectively fine for ll instructions requirement req
 Dynamic search...over the columns.
 
 Try it and see the output.
+
+
+#### Template
+
+ ![Image of Django App](https://github.com/kennedyCzar/POSTGRE-DATABASE-MANAGEMENT-USING-DJANGO-REST-API/blob/master/_IMAGES/Frontend.PNG)
+ 
+ #### Data Table
+ 
+ ![Image of Django App](https://github.com/kennedyCzar/POSTGRE-DATABASE-MANAGEMENT-USING-DJANGO-REST-API/blob/master/_IMAGES/Data_table.PNG)
+ 
+ 
+ 
+ 
