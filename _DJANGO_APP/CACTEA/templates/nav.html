@@ -1,0 +1,367 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block base %}
+<div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                        <img alt="image" class="rounded-circle" src="{% static 'img/profile_small.jpg' %}"/>
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="block m-t-xs font-bold">David Williams</span>
+                            <span class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
+                            <li><a class="dropdown-item" href="{% url 'contacts' %}">Contacts</a></li>
+                            <li><a class="dropdown-item" href="{% url 'mailbox' %}">Mailbox</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="{% url 'login_module' %}">Logout</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="{% url 'index' %}"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li class="active"><a href="{% url 'index' %}">Dashboard v.1</a></li>
+                        <li><a href="{% url 'dashboard_2' %}">Dashboard v.2</a></li>
+                        <li><a href="{% url 'dashboard_3' %}">Dashboard v.3</a></li>
+                        <li><a href="{% url 'dashboard_4_1' %}">Dashboard v.4</a></li>
+                        <li><a href="{% url 'dashboard_5' %}">Dashboard v.5 </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="{% url 'layouts' %}"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="{% url 'graph_flot' %}">Flot Charts</a></li>
+                        <li><a href="{% url 'graph_morris' %}">Morris.js Charts</a></li>
+                        <li><a href="{% url 'graph_rickshaw' %}">Rickshaw Charts</a></li>
+                        <li><a href="{% url 'graph_chartjs' %}">Chart.js</a></li>
+                        <li><a href="{% url 'graph_chartist' %}">Chartist</a></li>
+                        <li><a href="{% url 'c3' %}">c3 charts</a></li>
+                        <li><a href="{% url 'graph_peity' %}">Peity Charts</a></li>
+                        <li><a href="{% url 'graph_sparkline' %}">Sparkline Charts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="{% url 'mailbox' %}"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="label label-warning float-right">16/24</span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="{% url 'mailbox' %}">Inbox</a></li>
+                        <li><a href="{% url 'mail_detail' %}">Email view</a></li>
+                        <li><a href="{% url 'mail_compose' %}">Compose email</a></li>
+                        <li><a href="{% url 'email_template' %}">Email templates</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="{% url 'metrics' %}.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">Metrics</span>  </a>
+                </li>
+                <li>
+                    <a href="{% url 'widgets' %}"><i class="fa fa-flask"></i> <span class="nav-label">Widgets</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="{% url 'form_basic' %}">Basic form</a></li>
+                        <li><a href="{% url 'form_advanced' %}">Advanced Plugins</a></li>
+                        <li><a href="{% url 'form_wizard' %}">Wizard</a></li>
+                        <li><a href="{% url 'form_file_upload' %}">File Upload</a></li>
+                        <li><a href="{% url 'form_editors' %}">Text Editor</a></li>
+                        <li><a href="{% url 'form_autocomplete' %}">Autocomplete</a></li>
+                        <li><a href="{% url 'form_markdown' %}">Markdown</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">App Views</span>  <span class="float-right label label-primary">SPECIAL</span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="{% url 'contacts' %}">Contacts</a></li>
+                        <li><a href="{% url 'profile' %}">Profile</a></li>
+                        <li><a href="{% url 'profile_2' %}">Profile v.2</a></li>
+                        <li><a href="{% url 'contacts_2' %}">Contacts v.2</a></li>
+                        <li><a href="{% url 'projects' %}">Projects</a></li>
+                        <li><a href="{% url 'project_detail' %}">Project detail</a></li>
+                        <li><a href="{% url 'activity_stream' %}">Activity stream</a></li>
+                        <li><a href="{% url 'teams_board' %}">Teams board</a></li>
+                        <li><a href="{% url 'social_feed' %}">Social feed</a></li>
+                        <li><a href="{% url 'clients' %}">Clients</a></li>
+                        <li><a href="{% url 'full_height' %}">Outlook view</a></li>
+                        <li><a href="{% url 'vote_list' %}">Vote list</a></li>
+                        <li><a href="{% url 'file_manager' %}">File manager</a></li>
+                        <li><a href="{% url 'calendar' %}">Calendar</a></li>
+                        <li><a href="{% url 'issue_tracker' %}">Issue tracker</a></li>
+                        <li><a href="{% url 'blog' %}">Blog</a></li>
+                        <li><a href="{% url 'article' %}">Article</a></li>
+                        <li><a href="{% url 'faq' %}">FAQ</a></li>
+                        <li><a href="{% url 'timeline' %}">Timeline</a></li>
+                        <li><a href="{% url 'pin_board' %}">Pin board</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="{% url 'search_results' %}">Search results</a></li>
+                        <li><a href="{% url 'lockscreen' %}">Lockscreen</a></li>
+                        <li><a href="{% url 'invoice' %}">Invoice</a></li>
+                        <li><a href="{% url 'login_module' %}">Login</a></li>
+                        <li><a href="{% url 'login_two_columns' %}.html">Login v.2</a></li>
+                        <li><a href="{% url 'forgot_password' %}.html">Forget password</a></li>
+                        <li><a href="{% url 'register' %}.html">Register</a></li>
+                        <li><a href="{% url 'view_404' %}">404 Page</a></li>
+                        <li><a href="{% url 'view_505' %}">500 Page</a></li>
+                        <li><a href="{% url 'empty_page' %}">Empty page</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Miscellaneous</span><span class="label label-info float-right">NEW</span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="{% url 'toastr_notifications' %}">Notification</a></li>
+                        <li><a href="{% url 'nestable_list' %}">Nestable list</a></li>
+                        <li><a href="{% url 'agile_board' %}">Agile board</a></li>
+                        <li><a href="{% url 'timeline_2' %}">Timeline v.2</a></li>
+                        <li><a href="{% url 'diff' %}">Diff</a></li>
+                        <li><a href="{% url 'pdf_viewer' %}">PDF viewer</a></li>
+                        <li><a href="{% url 'i18support' %}">i18 support</a></li>
+                        <li><a href="{% url 'sweetalert' %}">Sweet alert</a></li>
+                        <li><a href="{% url 'idle_timer' %}">Idle timer</a></li>
+                        <li><a href="{% url 'truncate' %}">Truncate</a></li>
+                        <li><a href="{% url 'password_meter' %}">Password meter</a></li>
+                        <li><a href="{% url 'spinners' %}">Spinners</a></li>
+                        <li><a href="{% url 'spinners_usage' %}">Spinners usage</a></li>
+                        <li><a href="{% url 'tinycon' %}">Live favicon</a></li>
+                        <li><a href="{% url 'google_maps' %}">Google maps</a></li>
+                        <li><a href="{% url 'datamaps' %}">Datamaps</a></li>
+                        <li><a href="{% url 'social_buttons' %}">Social buttons</a></li>
+                        <li><a href="{% url 'code_editor' %}">Code editor</a></li>
+                        <li><a href="{% url 'modal_window' %}">Modal window</a></li>
+                        <li><a href="{% url 'clipboard' %}">Clipboard</a></li>
+                        <li><a href="{% url 'text_spinners' %}">Text spinners</a></li>
+                        <li><a href="{% url 'forum_main' %}">Forum view</a></li>
+                        <li><a href="{% url 'validation' %}">Validation</a></li>
+                        <li><a href="{% url 'tree_view' %}">Tree view</a></li>
+                        <li><a href="{% url 'loading_buttons' %}">Loading buttons</a></li>
+                        <li><a href="{% url 'chat_view' %}">Chat view</a></li>
+                        <li><a href="{% url 'masonry' %}">Masonry</a></li>
+                        <li><a href="{% url 'tour' %}">Tour</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI Elements</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="{% url 'typography' %}">Typography</a></li>
+                        <li><a href="{% url 'icons' %}">Icons</a></li>
+                        <li><a href="{% url 'draggable_panels' %}">Draggable Panels</a></li> <li><a href="resizeable_panels.html">Resizeable Panels</a></li>
+                        <li><a href="{% url 'buttons' %}">Buttons</a></li>
+                        <li><a href="{% url 'video' %}">Video</a></li>
+                        <li><a href="{% url 'tabs_panels' %}">Panels</a></li>
+                        <li><a href="{% url 'tabs' %}">Tabs</a></li>
+                        <li><a href="{% url 'notifications' %}">Notifications & Tooltips</a></li>
+                        <li><a href="{% url 'helper_classes' %}">Helper css classes</a></li>
+                        <li><a href="{% url 'badges_labels' %}">Badges, Labels, Progress</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="{% url 'grid_options' %}"><i class="fa fa-laptop"></i> <span class="nav-label">Grid options</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="{% url 'table_basic' %}">Static Tables</a></li>
+                        <li><a href="{% url 'table_data_tables' %}">Data Tables</a></li>
+                        <li><a href="{% url 'table_foo_table' %}">Foo Tables</a></li>
+                        <li><a href="{% url 'jq_grid' %}">jqGrid</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-shopping-cart"></i> <span class="nav-label">E-commerce</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="{% url 'ecommerce_products_grid' %}">Products grid</a></li>
+                        <li><a href="{% url 'ecommerce_product_list' %}">Products list</a></li>
+                        <li><a href="{% url 'ecommerce_product' %}">Product edit</a></li>
+                        <li><a href="{% url 'ecommerce_product_detail' %}">Product detail</a></li>
+                        <li><a href="{% url 'ecommerce_cart' %}">Cart</a></li>
+                        <li><a href="{% url 'ecommerce_orders' %}">Orders</a></li>
+                        <li><a href="{% url 'ecommerce_payments' %}">Credit Card form</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">Gallery</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="{% url 'basic_gallery' %}">Lightbox Gallery</a></li>
+                        <li><a href="{% url 'slick_carousel' %}">Slick Carousel</a></li>
+                        <li><a href="{% url 'carousel' %}">Bootstrap Carousel</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li>
+                            <a href="#" id="damian">Third Level <span class="fa arrow"></span></a>
+                            <ul class="nav nav-third-level">
+                                <li>
+                                    <a href="#">Third Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level Item</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">Second Level Item</a></li>
+                        <li>
+                            <a href="#">Second Level Item</a></li>
+                        <li>
+                            <a href="#">Second Level Item</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="{% url 'css_animation' %}"><i class="fa fa-magic"></i> <span class="nav-label">CSS Animations </span><span class="label label-info float-right">62</span></a>
+                </li>
+                <li class="landing_link">
+                    <a target="_blank" href="{% url 'landing' %}"><i class="fa fa-star"></i> <span class="nav-label">Landing Page</span> <span class="label label-warning float-right">NEW</span></a>
+                </li>
+                <li class="special_link">
+                    <a href="{% url 'package' %}"><i class="fa fa-database"></i> <span class="nav-label">Package</span></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+    <div id="page-wrapper" class="gray-bg dashbard-1">
+            <div class="row border-bottom">
+            <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                <form role="search" class="navbar-form-custom" action="search_results.html">
+                    <div class="form-group">
+                        <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                    </div>
+                </form>
+            </div>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li style="padding: 20px">
+                        <span class="m-r-sm text-muted welcome-message">Welcome to INSPINIA+ Admin Theme.</span>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-envelope"></i>  <span class="label label-warning">16</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-messages dropdown-menu-right">
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="dropdown-item float-left" href="{% url 'profile' %}">
+                                        <img alt="image" class="rounded-circle" src="{% static 'img/a7.jpg' %}">
+                                    </a>
+                                    <div class="media-body">
+                                        <small class="float-right">46h ago</small>
+                                        <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                        <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="dropdown-item float-left" href="{% url 'profile' %}">
+                                        <img alt="image" class="rounded-circle" src="{% static 'img/a4.jpg' %}">
+                                    </a>
+                                    <div class="media-body ">
+                                        <small class="float-right text-navy">5h ago</small>
+                                        <strong>Chris Johnatan Overtunk</strong> started following <strong>Monica Smith</strong>. <br>
+                                        <small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <div class="dropdown-messages-box">
+                                    <a class="dropdown-item float-left" href="{% url 'profile' %}">
+                                        <img alt="image" class="rounded-circle" src="{% static 'img/profile.jpg' %}">
+                                    </a>
+                                    <div class="media-body ">
+                                        <small class="float-right">23h ago</small>
+                                        <strong>Monica Smith</strong> love <strong>Kim Smith</strong>. <br>
+                                        <small class="text-muted">2 days ago at 2:30 am - 11.06.2014</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a href="{% static 'mailbox' %}" class="dropdown-item">
+                                        <i class="fa fa-envelope"></i> <strong>Read All Messages</strong>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                            <i class="fa fa-bell"></i>  <span class="label label-primary">8</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-alerts">
+                            <li>
+                                <a href="{% static 'mailbox' %}" class="dropdown-item">
+                                    <div>
+                                        <i class="fa fa-envelope fa-fw"></i> You have 16 messages
+                                        <span class="float-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <a href="{% url 'profile' %}" class="dropdown-item">
+                                    <div>
+                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                        <span class="float-right text-muted small">12 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <a href="{% url 'grid_options' %}" class="dropdown-item">
+                                    <div>
+                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                        <span class="float-right text-muted small">4 minutes ago</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="dropdown-divider"></li>
+                            <li>
+                                <div class="text-center link-block">
+                                    <a href="{% url 'notifications' %}" class="dropdown-item">
+                                        <strong>See All Alerts</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+    
+    
+                    <li>
+                        <a href="{% url 'login_module' %}">
+                            <i class="fa fa-sign-out"></i> Log out
+                        </a>
+                    </li>
+                    <li>
+                        <a class="right-sidebar-toggle">
+                            <i class="fa fa-tasks"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+{% block nav %}
+{% endblock %}
+{% endblock %}

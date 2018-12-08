@@ -1,0 +1,105 @@
+{% extends 'table_header.html' %}
+{% load render_table from django_tables2 %}
+{% load bootstrap3 %}
+{% load static %}
+{% block content %}
+                    <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover dataTables-example" id="example">
+                            <thead>
+                                    <tr><th><input type="checkbox" name="select_all" value="1" id="example-select-all"></th>
+                                        <th>id_IT</th>
+                                        <th>SERIAL_NUMBER</th>
+                                        <th>MANUFACTURER</th>
+                                        <th>NAME</th>
+                                        <th>MODEL</th>
+                                        <th>LOCATION</th>
+                                        <th>ROOM</th>
+                                        <th>ENERGY_CONSUMPTION</th>
+                                        <th>BTU</th>
+                                        <th>MICROCODE</th>
+                                        <th>PATCH_LEVEL</th>
+                                        <th>CUSTOMER_ID</th>
+                                        <th>HOSTS_APPLICATION</th>
+                                        <th>TCPADDR1</th>
+                                        <th>TCPADDR2</th>
+                                        <th>TCPADDR3</th>
+                                        <th>SW_GUI</th>
+                                        <th>INVESTMENT_DATE</th>
+                                        <th>MAINTENANCE_EXPIRATION_DATE</th>
+                                        <th>MAINTENANCE_PROVIDER</th>
+                                        <th>MAINTENANCE_CONTRACT</th>
+                                        <th>IS_EXTENSION_REQUIRED</th>
+                                        <th>IS_MIGRATION_REQUIRED</th>
+                                        <th>RAID_CONFIG</th>
+                                        <th>USABLE_CAPACITY_GB</th>
+                                        <th>CAPACITY_IN_USE_GB</th>
+                                        <th>FREE_CAPACITY_GB</th>
+                                        <th>EXTENSION</th>
+                                        <th>COMMENT_1</th>
+                                        <th>STORAGE_TYPE</th>
+                                        <th>READADMIN</th>
+                                        <th>RACK</th>
+                                        <th>COST_CENTER</th>
+                                        <th>CO2_KG</th>
+                                        <th>SECOND_INVESTMENT_DATE</th>
+                                    </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                        <th>id_IT</th>
+                                        <th>SERIAL_NUMBER</th>
+                                        <th>MANUFACTURER</th>
+                                        <th>NAME</th>
+                                        <th>MODEL</th>
+                                        <th>LOCATION</th>
+                                        <th>ROOM</th>
+                                        <th>ENERGY_CONSUMPTION</th>
+                                        <th>BTU</th>
+                                        <th>MICROCODE</th>
+                                        <th>PATCH_LEVEL</th>
+                                        <th>CUSTOMER_ID</th>
+                                        <th>HOSTS_APPLICATION</th>
+                                        <th>TCPADDR1</th>
+                                        <th>TCPADDR2</th>
+                                        <th>TCPADDR3</th>
+                                        <th>SW_GUI</th>
+                                        <th>INVESTMENT_DATE</th>
+                                        <th>MAINTENANCE_EXPIRATION_DATE</th>
+                                        <th>MAINTENANCE_PROVIDER</th>
+                                        <th>MAINTENANCE_CONTRACT</th>
+                                        <th>IS_EXTENSION_REQUIRED</th>
+                                        <th>IS_MIGRATION_REQUIRED</th>
+                                        <th>RAID_CONFIG</th>
+                                        <th>USABLE_CAPACITY_GB</th>
+                                        <th>CAPACITY_IN_USE_GB</th>
+                                        <th>FREE_CAPACITY_GB</th>
+                                        <th>EXTENSION</th>
+                                        <th>COMMENT_1</th>
+                                        <th>STORAGE_TYPE</th>
+                                        <th>READADMIN</th>
+                                        <th>RACK</th>
+                                        <th>COST_CENTER</th>
+                                        <th>CO2_KG</th>
+                                        <th>SECOND_INVESTMENT_DATE</th>
+                                </tr>
+                            </tfoot>
+                    </table>
+                    </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="float-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            <div>
+                <strong>Copyright</strong> Example Company &copy; 2014-2018
+            </div>
+        </div>
+
+        </div>
+        </div>
+{% endblock %}
