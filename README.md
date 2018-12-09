@@ -1,5 +1,12 @@
-How to Run the program
+# POSTGRE DATABASE MANAGEMENT USING DJANGO REST API [![HitCount](http://hits.dwyl.io/kennedyCzar/https://github.com/kennedyCzar/POSTGRE-DATABASE-MANAGEMENT-USING-DJANGO-REST-API.svg)](http://hits.dwyl.io/kennedyCzar/https://github.com/kennedyCzar/POSTGRE-DATABASE-MANAGEMENT-USING-DJANGO-REST-API)
+
+How to Run the program [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 --------------------------
+
+[![ForTheBadge uses-html](http://ForTheBadge.com/images/badges/uses-html.svg)](http://ForTheBadge.com)
+[![ForTheBadge uses-css](http://ForTheBadge.com/images/badges/uses-css.svg)](http://ForTheBadge.com)
+[![ForTheBadge uses-js](http://ForTheBadge.com/images/badges/uses-js.svg)](http://ForTheBadge.com)
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
 1. Unzip older and put inside any directory of choice.
 2. Open anaconda prompt and goto the project directory
@@ -36,3 +43,18 @@ Not that the project works perfectively fine for ll instructions requirement req
 Dynamic search...over the columns.
 
 Try it and see the output.
+
+
+#### Template
+
+ ![Image of Django App](https://github.com/kennedyCzar/POSTGRE-DATABASE-MANAGEMENT-USING-DJANGO-REST-API/blob/master/_IMAGES/Frontend.PNG)
+ 
+ #### Data Table
+ 
+ ![Image of Django App](https://github.com/kennedyCzar/POSTGRE-DATABASE-MANAGEMENT-USING-DJANGO-REST-API/blob/master/_IMAGES/Data_table.PNG)
+ 
+ 
+ #### Make contribution or report issue
+ 
+ [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/kennedyCzar/POSTGRE-DATABASE-MANAGEMENT-USING-DJANGO-REST-API/issues)
+ 
