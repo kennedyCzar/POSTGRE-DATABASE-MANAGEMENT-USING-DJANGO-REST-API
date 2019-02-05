@@ -1,9 +1,9 @@
 alabaster==0.7.10
 dj-database-url==0.5.0
-Django==2.0.8
+Djang>=2.0.8
 django-bootstrap3==11.0.0
 django-datatable==0.3.1
-django-filter==2.0.0
+django-filter>=2.0.0
 django-import-export==1.0.1
 django-model-utils==3.1.2
 django-tables2==1.21.2
