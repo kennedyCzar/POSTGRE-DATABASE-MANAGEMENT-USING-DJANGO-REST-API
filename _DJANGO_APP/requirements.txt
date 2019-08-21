@@ -13,5 +13,5 @@ gunicorn==19.9.0
 psycopg2==2.7.5
 tables==3.4.3
 tablib==0.12.1
-Werkzeug==0.14.1
+Werkzeug>=0.14.1
 whitenoise==4.0
